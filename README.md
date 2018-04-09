@@ -8,16 +8,22 @@ It's ridicolously coded, so don't take inspiration from this, you have been warn
 ## How to Use
 Having a Django project, install this sub-app with:  
 ```
-$ git clone --depth=1 https://github.com/colthreepv/django-random-cats.git cats && rm -rf !$/.git
+$ echo 'git+https://github.com/colthreepv/django-random-cats.git' >> requirements.txt && pip install -r requirements.txt
 ```
 
-Include in a Django project by editing your `settings.py`:  
+1. Include in a Django project by editing your `settings.py`:
 
 ```python
 INSTALLED_APPS = [
   'cats',
   ...
 ]
+```
+
+2. Include the polls URLconf in your project urls.py like this:
+
+```
+path('', include('cats.urls')),
 ```
 
 # Credits
