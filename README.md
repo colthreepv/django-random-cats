@@ -5,6 +5,9 @@ Django Random Cats is a dummy app to load a random Django Random Cats is a dummy
 
 It's ridicolously coded, so don't take inspiration from this, you have been warned.
 
+# Credits
+Code and inspiration from [sephiroth6/randomcat](https://github.com/sephiroth6/randomcat)
+
 # What to expect
 
 You were warned
