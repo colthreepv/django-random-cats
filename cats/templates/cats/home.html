@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <style type="text/css">
+      body {
+        background: black;
+        color: white;
+      }
+      div.container {
+        max-width: 500px;
+        margin: 100px auto;
+        border: 20px solid white;
+        padding: 10px;
+        text-align: center;
+      }
+      h1 { text-transform: uppercase; }
+      small { color: white; }
+      img { width: 100%; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cat Gif of the day</h1>
+      <img src="{{ cat }}">
+      {% if backup %}
+      <p>
+        <small>Courtesy: <a href="http://www.buzzfeed.com/copyranter/the-best-cat-gif-post-in-the-history-of-cat-gifs">Buzzfeed</a></small>
+      </p>
+      {% endif %}
+    </div>
+  </body>
+</html>
