@@ -5,6 +5,21 @@ Django Random Cats is a dummy app to load a random Django Random Cats is a dummy
 
 It's ridicolously coded, so don't take inspiration from this, you have been warned.
 
+## How to Use
+Having a Django project, install this sub-app with:  
+```
+$ git clone --depth=1 https://github.com/colthreepv/django-random-cats.git cats && rm -rf !$/.git
+```
+
+Include in a Django project by editing your `settings.py`:  
+
+```python
+INSTALLED_APPS = [
+  'cats.apps.CatsConfig',
+  ...
+]
+```
+
 # Credits
 Code and inspiration from [sephiroth6/randomcat](https://github.com/sephiroth6/randomcat)
 
